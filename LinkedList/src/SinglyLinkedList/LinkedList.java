@@ -123,14 +123,6 @@ public class LinkedList {
 
     }
 
-    static Node sortAsc(Node head){
-        return null;
-    }
-
-    static Node sortDesc(Node head){
-        return null;
-    }
-
     // function used to reverse a linked list
     static void reverseList(Node head){
         // TODO: Not working well must check on this later
