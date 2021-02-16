@@ -53,6 +53,7 @@ public class Main {
         System.out.println("After reverse");
         LinkedList.reverseList(list1);
         LinkedList.printList(list1);
+        System.out.println(LinkedList.countNodes(list1));
 
     }
 }

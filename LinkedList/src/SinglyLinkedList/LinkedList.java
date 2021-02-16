@@ -131,9 +131,19 @@ public class LinkedList {
         return null;
     }
 
-    // function used to reverse a linkedlist
+    // function used to reverse a linked list
     static void reverseList(Node head){
+        // TODO: Not working well must check on this later
+        Node current = head;
+        Node prev = null;
+        Node next = null;
 
+        while(current != null){
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
     }
 
     // returns number of nodes in a linkedList
