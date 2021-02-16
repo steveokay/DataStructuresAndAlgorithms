@@ -42,5 +42,17 @@ public class Main {
         LinkedList.delete(list1,7 );
         LinkedList.printList(ret);
 
+        // count number of nodes
+        System.out.println("counting number of nodes");
+        System.out.println(LinkedList.countNodes(list1));
+
+        // reverse a linked list
+        System.out.println("Reversing a linked list");
+        System.out.println("Before reverse");
+        LinkedList.printList(list1);
+        System.out.println("After reverse");
+        LinkedList.reverseList(list1);
+        LinkedList.printList(list1);
+
     }
 }

@@ -131,8 +131,23 @@ public class LinkedList {
         return null;
     }
 
-    static Node reverseList(Node head){
-        return null;
+    // function used to reverse a linkedlist
+    static void reverseList(Node head){
+
+    }
+
+    // returns number of nodes in a linkedList
+    static int countNodes(Node head){
+        int counter = 0;
+        Node current = head;
+
+        // iterative
+        while(current != null){
+            counter++;
+            current = current.next;
+        }
+
+        return counter;
     }
 
 }
