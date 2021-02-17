@@ -81,14 +81,5 @@ public class BinaryTree {
     }
 
     /////////////// end of level order traversal//////////
-    // function  to print node values
-    public void printNodes(Node head) {
-
-    }
-
-    // function to count all nodes in the binary tree
-    public void countNodes(Node head) {
-
-    }
 
 }

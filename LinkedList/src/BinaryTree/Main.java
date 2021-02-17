@@ -9,7 +9,7 @@ public class Main {
         tree.left.left = new Node(4);
         tree.left.right = new Node(5);
         tree.right.left = new Node(6);
-        tree.right.left = new Node(7);
+        tree.right.right = new Node(7);
 
         // perform
         BinaryTree binary = new BinaryTree();
