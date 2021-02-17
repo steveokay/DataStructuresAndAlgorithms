@@ -2,6 +2,8 @@ package BinaryTree;
 
 public class BinaryTree {
 
+    ////////////////  DEPTH FIRST SEARCH BINARY TREE FUNCTIONS ///////////////
+
     // dfs : f(x) to perform inorder traversal
     public void inorder(Node head) {
         if(head == null)
@@ -34,9 +36,21 @@ public class BinaryTree {
 
     // dfs : f(X) to do a postorder traversal on the tree
     public void postorder(Node head) {
+        if(head == null)
+            return;
 
+        // recur left
+        postorder(head.left);
+
+        // recur right
+        postorder(head.right);
+
+        // print nodes traversed
+        System.out.print(head.data + " ");
 
     }
+
+    ///////////////   END OF DEPTH FIRST SEARCH BINARY TREE FUNCTIONS /////////////
 
     // function  to print node values
     public void printNodes(Node head) {

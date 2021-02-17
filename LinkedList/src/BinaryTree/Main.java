@@ -16,8 +16,10 @@ public class Main {
         System.out.println("Inorder traversal");
         binary.inorder(tree);
 
-        System.out.println("Pre - order traversal");
+        System.out.println("\nPre - order traversal");
         binary.preorder(tree);
 
+        System.out.println("\nPost - order traversal");
+        binary.postorder(tree);
     }
 }
