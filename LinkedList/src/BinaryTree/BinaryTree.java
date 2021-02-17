@@ -19,10 +19,22 @@ public class BinaryTree {
 
     // dfs function to do a preorder traversal on the tree
     public void preorder(Node head) {
+        if(head == null)
+            return;
+
+        //print first
+        System.out.print(head.data + " ");
+
+        // recur left
+        preorder(head.left);
+        // recur right
+        preorder(head.right);
+
     }
 
     // dfs : f(X) to do a postorder traversal on the tree
     public void postorder(Node head) {
+
 
     }
 

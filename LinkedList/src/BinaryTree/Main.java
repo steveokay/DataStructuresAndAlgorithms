@@ -12,6 +12,12 @@ public class Main {
 
         // perform
         BinaryTree binary = new BinaryTree();
+
+        System.out.println("Inorder traversal");
         binary.inorder(tree);
+
+        System.out.println("Pre - order traversal");
+        binary.preorder(tree);
+
     }
 }
