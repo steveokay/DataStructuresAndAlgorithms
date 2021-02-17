@@ -46,6 +46,18 @@ public class Main {
         System.out.println("counting number of nodes");
         System.out.println(LinkedList.countNodes(list1));
 
+        // join two lists
+        System.out.println("Joining two lists");
+        Node tryList = new Node(10);
+        Node tryList1 = new Node(11);
+        Node tryList2 = new Node(12);
+
+        tryList.next = tryList1;
+        tryList1.next = tryList2;
+
+        LinkedList.joinLinkedList(list1,tryList);
+        LinkedList.printList(list1);
+
         // reverse a linked list
         System.out.println("Reversing a linked list");
         System.out.println("Before reverse");

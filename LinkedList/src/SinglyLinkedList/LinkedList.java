@@ -152,4 +152,27 @@ public class LinkedList {
         return counter;
     }
 
+    // function to connect to linked lists
+    // after last node of linked list 1 we set a pointer to first node of linked list 2
+    static Node joinLinkedList(Node list1, Node list2){
+
+        Node current = list1;
+
+        while(current != null){
+
+            if(current.next == null){
+                current.next = list2;
+                break;
+            }
+            current = current.next;
+        }
+
+        return list1;
+    }
+
+    // function to get intersection of two linked list
+    static int getLinkedListIntersection(Node list1, Node list2){
+        return  0 ;
+    }
+
 }
