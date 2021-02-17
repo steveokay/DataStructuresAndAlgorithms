@@ -1,5 +1,9 @@
 package BinaryTree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinaryTree {
 
     ////////////////  DEPTH FIRST SEARCH BINARY TREE FUNCTIONS ///////////////
@@ -52,6 +56,31 @@ public class BinaryTree {
 
     ///////////////   END OF DEPTH FIRST SEARCH BINARY TREE FUNCTIONS /////////////
 
+    /////// Breadth first / level order traversal /////////
+    public void levelOrder(Node head){
+        // using queue method
+        Queue<Node> queue = new LinkedList<Node>();
+        queue.add(head);
+
+        // while queue is not empty
+        while(!queue.isEmpty()){
+            // remove current head
+            Node tempNode = queue.poll();
+            System.out.print(tempNode.data + " ");
+
+            // enqueue left child
+            if(tempNode.left != null){
+                queue.add(tempNode.left);
+            }
+
+            // enqueue right child
+            if(tempNode.right != null){
+                queue.add(tempNode.right);
+            }
+        }
+    }
+
+    /////////////// end of level order traversal//////////
     // function  to print node values
     public void printNodes(Node head) {
 

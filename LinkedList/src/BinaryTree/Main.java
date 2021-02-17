@@ -9,6 +9,7 @@ public class Main {
         tree.left.left = new Node(4);
         tree.left.right = new Node(5);
         tree.right.left = new Node(6);
+        tree.right.left = new Node(7);
 
         // perform
         BinaryTree binary = new BinaryTree();
@@ -21,5 +22,8 @@ public class Main {
 
         System.out.println("\nPost - order traversal");
         binary.postorder(tree);
+
+        System.out.println("\nlevel-order / BFS traversal");
+        binary.levelOrder(tree);
     }
 }
