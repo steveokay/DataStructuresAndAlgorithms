@@ -5,9 +5,7 @@ import java.util.Queue;
 
 public class BinaryTree {
 
-    ////////////////  DEPTH FIRST SEARCH BINARY TREE FUNCTIONS ///////////////
-
-    // dfs : f(x) to perform inorder traversal
+    // dfs: inorder traversal on binary tree
     public void inorder(Node head) {
         if(head == null)
             return;
@@ -15,19 +13,19 @@ public class BinaryTree {
         // recur left
         inorder(head.left);
 
-        // print node
+        // print traversed node
         System.out.print(head.data + " ");
 
         // recur right
         inorder(head.right);
     }
 
-    // dfs function to do a preorder traversal on the tree
+    // dfs: preorder traversal on binary tree
     public void preorder(Node head) {
         if(head == null)
             return;
 
-        //print first
+        //print traversed nodes first
         System.out.print(head.data + " ");
 
         // recur left
@@ -37,7 +35,7 @@ public class BinaryTree {
 
     }
 
-    // dfs : f(X) to do a postorder traversal on the tree
+    // dfs: postorder traversal on binary tree
     public void postorder(Node head) {
         if(head == null)
             return;
@@ -53,9 +51,7 @@ public class BinaryTree {
 
     }
 
-    ///////////////   END OF DEPTH FIRST SEARCH BINARY TREE FUNCTIONS /////////////
-
-    /////// Breadth first / level order traversal /////////
+    // Breadth first / level order traversal on binary tree
     public void levelOrder(Node head){
         // using queue method
         Queue<Node> queue = new LinkedList<Node>();
@@ -78,7 +74,5 @@ public class BinaryTree {
             }
         }
     }
-
-    /////////////// end of level order traversal//////////
 
 }
