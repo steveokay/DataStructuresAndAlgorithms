@@ -29,5 +29,7 @@ public class Main {
         System.out.println("\nInsert new node to tree : ");
         binary.addNodeToTree(tree,8);
         binary.levelOrder(tree);
+
+        System.out.println("\nSum of all keys : " + binary.sumAllKeys(tree));
     }
 }

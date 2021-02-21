@@ -104,4 +104,10 @@ public class BinaryTree {
         }
     }
 
+    public int sumAllKeys(Node tree){
+        if(tree == null)
+            return 0;
+        return (tree.data + sumAllKeys(tree.left) + sumAllKeys(tree.right));
+    }
+
 }
