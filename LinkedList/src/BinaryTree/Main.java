@@ -25,5 +25,9 @@ public class Main {
 
         System.out.println("\nlevel-order / BFS traversal");
         binary.levelOrder(tree);
+
+        System.out.println("\nInsert new node to tree : ");
+        binary.addNodeToTree(tree,8);
+        binary.levelOrder(tree);
     }
 }

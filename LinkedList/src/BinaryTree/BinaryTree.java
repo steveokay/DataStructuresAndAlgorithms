@@ -75,4 +75,33 @@ public class BinaryTree {
         }
     }
 
+    public void addNodeToTree(Node root, int newKey){
+        if(root == null){
+            root = new Node(newKey);
+            return;
+        }
+        Queue<Node> queue = new LinkedList<Node>();
+        queue.add(root);
+
+        // level order traversal looking fo empty space
+        while(!queue.isEmpty()){
+            root = queue.peek();
+            queue.remove();
+
+            if(root.left == null){
+                root.left = new Node(newKey);
+                break;
+            }else{
+                queue.add(root.left);
+            }
+
+            if(root.right == null){
+                root.right = new Node(newKey);
+                break;
+            }else{
+                queue.add(root.right);
+            }
+        }
+    }
+
 }
