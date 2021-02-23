@@ -55,4 +55,19 @@ public class DoublyList {
         addNodeAfter(dll.next,prevValue,newValue);
     }
 
+    void deleteNode(Node dll, int valueToDelete){
+        Node current = dll;
+        if(current == null){
+            System.out.println("The specified value doesnt exist");
+            return;
+        }
+
+        if(current.data == valueToDelete){
+            current.prev.next = current.next;
+            return;
+        }
+
+        deleteNode(dll.next, valueToDelete);
+    }
+
 }
