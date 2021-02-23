@@ -30,4 +30,29 @@ public class DoublyList {
         addNodeToDll(dll.next,value);
     }
 
+    void addNodeAfter(Node dll, int prevValue, int newValue){
+        Node current = dll;
+
+        if(dll == null){
+            System.out.println("Value/Node specified doesn't exist");
+            return;
+        }
+
+        if(current != null){
+
+            if(current.data == prevValue){
+                Node newNode = new Node(newValue);
+                Node prev = current.next;
+
+                current.next = newNode;
+
+                newNode.prev = current;
+                newNode.next = prev;
+
+                return;
+            }
+        }
+        addNodeAfter(dll.next,prevValue,newValue);
+    }
+
 }

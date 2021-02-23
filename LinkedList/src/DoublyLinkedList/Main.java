@@ -35,5 +35,8 @@ public class Main {
         doubly.addNodeToDll(dll1, 7);
         doubly.printAllNextNodes(dll1);
 
+        System.out.println("\nAdd node new after given value/node");
+        doubly.addNodeAfter(dll1, 1, 10);
+        doubly.printAllNextNodes(dll1);
     }
 }
