@@ -87,4 +87,20 @@ public class DoublyList {
         deleteNode(dll.next, valueToDelete);
     }
 
+    Node deepCopyDll(Node dll){
+
+        Node current = dll;
+        Node newNode = null;
+
+        if(current != null){
+            newNode = new Node(dll.data);
+            newNode.next = current.next;
+            newNode.prev = current.prev;
+
+            deepCopyDll(current.next);
+        }
+
+        return newNode;
+    }
+
 }

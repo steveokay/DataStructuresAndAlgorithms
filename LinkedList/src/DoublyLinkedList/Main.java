@@ -45,5 +45,14 @@ public class Main {
 
         System.out.println("\nReverse traversal of the DLL");
         doubly.printReverseOrder(dll1);
+
+        System.out.println("\nDeepCopy Doubly Linked List");
+        Node deepCopied = doubly.deepCopyDll(dll1);
+        doubly.printAllNextNodes(deepCopied);
+
+        System.out.println();
+        System.out.print(dll1);
+        System.out.println();
+        System.out.print(deepCopied);
     }
 }
