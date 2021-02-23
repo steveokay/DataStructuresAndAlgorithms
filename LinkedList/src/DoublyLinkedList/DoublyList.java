@@ -1,5 +1,8 @@
 package DoublyLinkedList;
 
+import java.util.Collections;
+import java.util.LinkedList;
+
 public class DoublyList {
 
     void printAllNextNodes(Node dll){
@@ -14,6 +17,20 @@ public class DoublyList {
         System.out.print(current.data + " => ");
 
         printAllNextNodes(current.next);
+    }
+
+    void printReverseOrder(Node dll){
+
+        Node current = dll;
+        LinkedList<Integer> arrList = new LinkedList<>();
+
+        while(current != null){
+            arrList.add(current.data);
+            current = current.next;
+        }
+
+        Collections.reverse(arrList);
+        System.out.print(arrList);
     }
 
     // add after last index

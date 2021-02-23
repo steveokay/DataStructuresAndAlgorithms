@@ -42,5 +42,8 @@ public class Main {
         System.out.println("\nDelete given value from DLL");
         doubly.deleteNode(dll1,10);
         doubly.printAllNextNodes(dll1);
+
+        System.out.println("\nReverse traversal of the DLL");
+        doubly.printReverseOrder(dll1);
     }
 }
