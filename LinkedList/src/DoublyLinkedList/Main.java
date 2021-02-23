@@ -31,5 +31,9 @@ public class Main {
         System.out.println("Print all next nodes");
         doubly.printAllNextNodes(dll1);
 
+        System.out.println("\nAdd node after last index");
+        doubly.addNodeToDll(dll1, 7);
+        doubly.printAllNextNodes(dll1);
+
     }
 }
