@@ -69,7 +69,7 @@ class Graph<T> {
         }
     }
 
-    // Prints the adjancency list of each vertex.
+    // Prints the adjacency list of each vertex.
     @Override
     public String toString()
     {
